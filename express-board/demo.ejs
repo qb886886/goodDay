@@ -1,0 +1,20 @@
+<section>
+  <% if(messages.length === 0) { %>
+    <p>暂时没有留言内容</p>
+  <% } else { %>
+    <table>
+      <tr>
+        <th>留言时间</th>
+        <th>留言姓名</th>
+        <th>留言内容</th>
+      </tr>
+      <% messages.forEach((msg) => {%>
+        <tr>
+          <td><%=msg.time%></td>
+          <td><%=msg.name%></td>
+          <td><%=msg.content%></td>
+        </tr>
+      <% })%>
+    </table>
+  <% } %>
+</section>

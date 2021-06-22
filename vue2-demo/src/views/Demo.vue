@@ -5,6 +5,7 @@
 
 <script>
 import 'packages/toast/index'
+import 'packages/printerCenter/index'
 export default {
   mounted () {
     this.$toast.success({
